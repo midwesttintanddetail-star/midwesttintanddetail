@@ -123,18 +123,18 @@ export default function Home() {
           {/* Primary service - Window Tinting */}
           <div className="mb-12">
             <div className="service-card bg-surface-light border border-accent/20 rounded-xl overflow-hidden">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative h-64 lg:h-auto min-h-[300px] overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-5">
+                <div className="relative aspect-[3/4] sm:aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[600px] lg:col-span-2 overflow-hidden bg-black">
                   <video
                     src="/ceramiccoatingvid.mp4"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                   />
                 </div>
-                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="p-8 lg:p-12 flex flex-col justify-center lg:col-span-3">
                   <span className="inline-flex items-center gap-2 text-accent text-xs font-bold uppercase tracking-widest mb-3">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />

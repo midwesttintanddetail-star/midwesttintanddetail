@@ -94,7 +94,7 @@ export default function ServicesPage() {
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                                 {/* Main Image or Video */}
                                 <div
-                                    className={`relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] max-h-[600px] w-full rounded-xl overflow-hidden bg-black ${service.primary ? "border-2 border-accent/30 shadow-lg shadow-accent/10" : "border border-border shadow-2xl shadow-black/50"
+                                    className={`relative aspect-[3/4] sm:aspect-[4/5] lg:aspect-[3/4] xl:aspect-[2/3] max-h-[700px] w-full rounded-xl overflow-hidden bg-black ${service.primary ? "border-2 border-accent/30 shadow-lg shadow-accent/10" : "border border-border shadow-2xl shadow-black/50"
                                         }`}
                                 >
                                     {service.mainVideo ? (
@@ -104,7 +104,7 @@ export default function ServicesPage() {
                                             loop
                                             muted
                                             playsInline
-                                            className="absolute inset-0 w-full h-full object-cover"
+                                            className="absolute inset-0 w-full h-full object-cover object-center"
                                         />
                                     ) : service.mainImage ? (
                                         <Image
