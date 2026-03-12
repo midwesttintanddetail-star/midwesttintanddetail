@@ -8,7 +8,7 @@ const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
-});
+}); 
 
 export const metadata: Metadata = {
   title: "Midwest Tint & Detail | Plymouth's #1 Trusted Tint & Detail Shop",
