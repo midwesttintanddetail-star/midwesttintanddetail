@@ -17,8 +17,9 @@ const services = [
         description:
             "We specialize in premium ceramic window film that delivers superior heat rejection, UV protection, and crystal-clear visibility. Our ceramic tint blocks up to 99% of UV rays and significantly reduces interior heat — all while maintaining a sleek, factory look.",
         features: ["Lifetime Warranty", "99% UV Block", "Heat Rejection", "Crystal-Clear Clarity"],
-        mainImage: "/ceramictintmain.webp",
-        gallery: ["/ceramictint2.webp"],
+        mainImage: "",
+        mainVideo: "/ceramiccoatingvid.mp4",
+        gallery: [],
     },
     {
         id: "ceramic-coating",
@@ -27,8 +28,9 @@ const services = [
         description:
             "Long-lasting protection for your vehicle's paint with a hydrophobic ceramic coating that repels water, dirt, and contaminants. Keep your vehicle looking showroom-fresh with a deep, glossy shine that lasts for years.",
         features: ["Hydrophobic Protection", "UV Resistance", "Deep Gloss Finish", "Easy Maintenance"],
-        mainImage: "/download.jpg",
-        gallery: ["/download-2.jpg", "/download (4).jpg"],
+        mainImage: "/ceramic_1.jpg",
+        mainVideo: "",
+        gallery: ["/ceramic_2.jpg"],
     },
     {
         id: "paint-correction",
@@ -37,8 +39,9 @@ const services = [
         description:
             "Remove swirl marks, scratches, and oxidation to restore your paint to a flawless, mirror-like finish. Our multi-stage paint correction process uses professional-grade compounds and polishes to bring your paint back to life.",
         features: ["Swirl Removal", "Scratch Repair", "Oxidation Removal", "Mirror Finish"],
-        mainImage: "/paintcorrectionmain.jpg",
-        gallery: ["/paintcorrection2.jpg", "/paintcorrection3.jpg"],
+        mainImage: "/paint_correction_1.jpg",
+        mainVideo: "",
+        gallery: ["/paint_correction_2.jpg"],
     },
     {
         id: "interior-detailing",
@@ -47,8 +50,9 @@ const services = [
         description:
             "Deep cleaning and restoration of your vehicle's interior. From leather conditioning to carpet shampooing, we make your cabin look and feel brand new. Every surface is meticulously cleaned, conditioned, and protected.",
         features: ["Leather Conditioning", "Carpet Shampooing", "Dashboard Restoration", "Odor Elimination"],
-        mainImage: "/interiordetailingmain.jpg",
-        gallery: ["/interiordetailing2.jpg", "/interiordetailing3.jpg"],
+        mainImage: "",
+        mainVideo: "/interior_amg.mp4",
+        gallery: [],
     },
     {
         id: "exterior-detailing",
@@ -57,8 +61,9 @@ const services = [
         description:
             "Premium exterior detailing that goes beyond a basic wash. Our process includes clay bar treatment, machine polish, and sealant application to transform your vehicle's exterior to a stunning showroom finish.",
         features: ["Clay Bar Treatment", "Machine Polish", "Sealant Application", "Wheel & Tire Detail"],
-        mainImage: "/exteriordetailingmain.jpg",
-        gallery: ["/exteriordetailing2.jpg", "/exteriordetailing3.jpg", "/exteriordetailing4.jpg"],
+        mainImage: "/exterior_cadillac.jpg",
+        mainVideo: "",
+        gallery: ["/engine_before.jpg", "/engine_after.jpg"],
     },
 ];
 
@@ -87,17 +92,28 @@ export default function ServicesPage() {
                         <section key={service.id} id={service.id}>
                             {/* Service Header */}
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                                {/* Main Image */}
+                                {/* Main Image or Video */}
                                 <div
-                                    className={`relative h-72 sm:h-80 lg:h-96 rounded-xl overflow-hidden ${service.primary ? "border-2 border-accent/30" : "border border-border"
+                                    className={`relative aspect-[4/5] sm:aspect-square lg:aspect-[4/5] max-h-[600px] w-full rounded-xl overflow-hidden bg-black ${service.primary ? "border-2 border-accent/30 shadow-lg shadow-accent/10" : "border border-border shadow-2xl shadow-black/50"
                                         }`}
                                 >
-                                    <Image
-                                        src={service.mainImage}
-                                        alt={service.title}
-                                        fill
-                                        className="object-cover"
-                                    />
+                                    {service.mainVideo ? (
+                                        <video
+                                            src={service.mainVideo}
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                            className="absolute inset-0 w-full h-full object-cover"
+                                        />
+                                    ) : service.mainImage ? (
+                                        <Image
+                                            src={service.mainImage}
+                                            alt={service.title}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    ) : null}
                                     {service.primary && (
                                         <div className="absolute top-4 left-4 z-10 inline-flex items-center gap-2 bg-accent/90 text-white text-xs font-bold uppercase tracking-widest rounded-full px-4 py-1.5">
                                             <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
@@ -150,17 +166,17 @@ export default function ServicesPage() {
                                                 : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
                                         }`}>
                                         {service.gallery.map((img, i) => (
-                                            <div
-                                                key={i}
-                                                className="relative h-48 sm:h-56 rounded-lg overflow-hidden border border-border hover:border-accent/30 transition-colors"
-                                            >
-                                                <Image
-                                                    src={img}
-                                                    alt={`${service.title} ${i + 2}`}
-                                                    fill
-                                                    className="object-cover hover:scale-105 transition-transform duration-500"
-                                                />
-                                            </div>
+                                                <div
+                                                    key={i}
+                                                    className="relative aspect-square sm:aspect-[4/5] md:aspect-video rounded-lg overflow-hidden border border-border hover:border-accent/30 transition-colors shadow-xl shadow-black/40"
+                                                >
+                                                    <Image
+                                                        src={img}
+                                                        alt={`${service.title} gallery image ${i + 1}`}
+                                                        fill
+                                                        className="object-cover hover:scale-105 transition-transform duration-700"
+                                                    />
+                                                </div>
                                         ))}
                                     </div>
                                 </div>

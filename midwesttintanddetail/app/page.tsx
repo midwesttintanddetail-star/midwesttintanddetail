@@ -6,22 +6,14 @@ export default function Home() {
     <>
       {/* ===== HERO ===== */}
       <section className="relative min-h-[90vh] flex items-center justify-center hero-overlay">
-        {/* Background images — mobile vs desktop */}
-        <Image
-          src="/hero-mobile.png"
-          alt="Midwest Tint & Detail"
-          fill
-          className="object-cover md:hidden"
-          priority
-          quality={85}
-        />
-        <Image
-          src="/hero-desktop.png"
-          alt="Midwest Tint & Detail"
-          fill
-          className="object-cover hidden md:block"
-          priority
-          quality={85}
+        {/* Background Video */}
+        <video
+          src="/hero_video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-background z-[1]" />
 
@@ -132,8 +124,15 @@ export default function Home() {
           <div className="mb-12">
             <div className="service-card bg-surface-light border border-accent/20 rounded-xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative h-64 lg:h-auto min-h-[300px]">
-                  <Image src="/ceramictintmain.webp" alt="Ceramic Window Tinting" fill className="object-cover" />
+                <div className="relative h-64 lg:h-auto min-h-[300px] overflow-hidden">
+                  <video
+                    src="/ceramiccoatingvid.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <span className="inline-flex items-center gap-2 text-accent text-xs font-bold uppercase tracking-widest mb-3">
@@ -179,11 +178,11 @@ export default function Home() {
           </div>
 
           {/* Secondary services grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Ceramic Coating */}
             <div className="service-card bg-surface-light border border-border rounded-xl overflow-hidden group">
-              <div className="relative h-48">
-                <Image src="/download.jpg" alt="Ceramic Coating" fill className="object-cover" />
+              <div className="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-video lg:aspect-[4/3]">
+                <Image src="/ceramic_1.jpg" alt="Ceramic Coating" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-bold text-white uppercase">Ceramic Coating</h3>
@@ -205,8 +204,8 @@ export default function Home() {
 
             {/* Paint Correction */}
             <div className="service-card bg-surface-light border border-border rounded-xl overflow-hidden group">
-              <div className="relative h-48">
-                <Image src="/paintcorrectionmain.jpg" alt="Paint Correction" fill className="object-cover" />
+              <div className="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-video lg:aspect-[4/3]">
+                <Image src="/paint_correction_1.jpg" alt="Paint Correction" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-bold text-white uppercase">Paint Correction</h3>
@@ -226,39 +225,22 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Interior Detailing */}
+            {/* Full Detailing */}
             <div className="service-card bg-surface-light border border-border rounded-xl overflow-hidden group">
-              <div className="relative h-48">
-                <Image src="/interiordetailingmain.jpg" alt="Interior Detailing" fill className="object-cover" />
+              <div className="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-video lg:aspect-[4/3] bg-black">
+                <video
+                  src="/interior_amg.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-white uppercase">Interior Detailing</h3>
+                <h3 className="text-lg font-bold text-white uppercase">Full Detailing</h3>
                 <p className="mt-2 text-muted text-sm leading-relaxed">
-                  Deep cleaning and restoration of your vehicle&apos;s interior — leather
-                  conditioning, carpet shampooing, and more.
-                </p>
-                <Link
-                  href="/booking"
-                  className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
-                >
-                  Get a Quote
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
-            {/* Exterior Detailing */}
-            <div className="service-card bg-surface-light border border-border rounded-xl overflow-hidden group">
-              <div className="relative h-48">
-                <Image src="/exteriordetailingmain.jpg" alt="Exterior Detailing" fill className="object-cover" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-white uppercase">Exterior Detailing</h3>
-                <p className="mt-2 text-muted text-sm leading-relaxed">
-                  Premium exterior wash, clay bar treatment, polish, and sealant for a
-                  stunning showroom finish.
+                  Complete interior & exterior restoration — from deep cleaning and leather conditioning to a premium exterior wash and sealant.
                 </p>
                 <Link
                   href="/booking"
@@ -340,93 +322,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative h-[400px] rounded-xl overflow-hidden">
-              <Image src="/ceramictint2.webp" alt="Ceramic window tinting work" fill className="object-cover" />
+            <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10">
+              <Image src="/store_front.jpg" alt="Midwest Tint & Detail Shop" fill className="object-cover" />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== OUR PROCESS ===== */}
-      <section className="py-20 sm:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
-              Our Process
-            </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase">
-              Simple &amp; Reliable <span className="text-accent">Vehicle Protection</span>
-            </h2>
-            <p className="mt-4 text-muted max-w-2xl mx-auto">
-              We follow a detailed and precise process to ensure your vehicle gets the protection it deserves.
-              From the moment you book an appointment to the final reveal, we prioritize quality, care, and your satisfaction.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Steps */}
-            <div className="space-y-8">
-              {[
-                {
-                  step: "01",
-                  title: "Consultation & Assessment",
-                  description:
-                    "We begin with a thorough consultation to understand your needs. Whether you're looking for window tinting, ceramic coating, or detailing, we assess your vehicle to recommend the best solutions tailored to your needs.",
-                },
-                {
-                  step: "02",
-                  title: "Surface Preparation",
-                  description:
-                    "Before any installation, we meticulously prepare your vehicle's surfaces. This includes cleaning, polishing, and ensuring the area is free from contaminants. Proper preparation guarantees flawless results and long-lasting protection.",
-                },
-                {
-                  step: "03",
-                  title: "Expert Installation",
-                  description:
-                    "Our team uses high-quality materials and advanced tools for precise application. From seamless window tinting to durable ceramic coatings, every detail is perfected. Each service is completed with expert care to maintain your vehicle's finish.",
-                },
-                {
-                  step: "04",
-                  title: "Quality Check & Final Reveal",
-                  description:
-                    "Once the installation is complete, we perform a detailed quality inspection. This ensures that every layer of protection meets our high standards. We then walk you through the results, so you can drive away confident in your vehicle's enhanced protection.",
-                },
-              ].map((item) => (
-                <div key={item.step} className="flex gap-5">
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-accent/10 border-2 border-accent flex items-center justify-center flex-shrink-0">
-                      <span className="text-accent text-sm font-black">{item.step}</span>
-                    </div>
-                    {item.step !== "04" && (
-                      <div className="w-0.5 h-full bg-accent/20 mt-2" />
-                    )}
-                  </div>
-                  <div className="pb-2">
-                    <h3 className="text-lg font-bold text-white uppercase">{item.title}</h3>
-                    <p className="mt-2 text-muted text-sm leading-relaxed">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Images */}
-            <div className="space-y-4">
-              <div className="relative h-64 sm:h-72 rounded-xl overflow-hidden border border-border">
-                <Image src="/ceramictintmain.webp" alt="Window tinting process" fill className="object-cover" />
-              </div>
-              <div className="relative h-64 sm:h-72 rounded-xl overflow-hidden border border-border">
-                <Image src="/exteriordetailingmain.jpg" alt="Finished vehicle detail" fill className="object-cover" />
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-14">
-            <Link href="/booking" className="btn-primary text-base !py-3.5 !px-8">
-              Get a Free Quote
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </Link>
           </div>
         </div>
       </section>
@@ -665,6 +563,143 @@ export default function Home() {
               </svg>
               Review us on Google
             </a>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* ===== OUR PROCESS ===== */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+              Our Process
+            </span>
+            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase">
+              Simple &amp; Reliable <span className="text-accent">Vehicle Protection</span>
+            </h2>
+            <p className="mt-4 text-muted max-w-2xl mx-auto">
+              We follow a detailed and precise process to ensure your vehicle gets the protection it deserves.
+              From the moment you book an appointment to the final reveal, we prioritize quality, care, and your satisfaction.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Steps */}
+            <div className="space-y-8">
+              {[
+                {
+                  step: "01",
+                  title: "Consultation & Assessment",
+                  description:
+                    "We begin with a thorough consultation to understand your needs. Whether you're looking for window tinting, ceramic coating, or detailing, we assess your vehicle to recommend the best solutions tailored to your needs.",
+                },
+                {
+                  step: "02",
+                  title: "Surface Preparation",
+                  description:
+                    "Before any installation, we meticulously prepare your vehicle's surfaces. This includes cleaning, polishing, and ensuring the area is free from contaminants. Proper preparation guarantees flawless results and long-lasting protection.",
+                },
+                {
+                  step: "03",
+                  title: "Expert Installation",
+                  description:
+                    "Our team uses high-quality materials and advanced tools for precise application. From seamless window tinting to durable ceramic coatings, every detail is perfected. Each service is completed with expert care to maintain your vehicle's finish.",
+                },
+                {
+                  step: "04",
+                  title: "Quality Check & Final Reveal",
+                  description:
+                    "Once the installation is complete, we perform a detailed quality inspection. This ensures that every layer of protection meets our high standards. We then walk you through the results, so you can drive away confident in your vehicle's enhanced protection.",
+                },
+              ].map((item) => (
+                <div key={item.step} className="flex gap-5">
+                  <div className="flex flex-col items-center">
+                    <div className="w-12 h-12 rounded-full bg-accent/10 border-2 border-accent flex items-center justify-center flex-shrink-0">
+                      <span className="text-accent text-sm font-black">{item.step}</span>
+                    </div>
+                    {item.step !== "04" && (
+                      <div className="w-0.5 h-full bg-accent/20 mt-2" />
+                    )}
+                  </div>
+                  <div className="pb-2">
+                    <h3 className="text-lg font-bold text-white uppercase">{item.title}</h3>
+                    <p className="mt-2 text-muted text-sm leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Images */}
+            <div className="space-y-4">
+              <div className="relative h-64 sm:h-72 rounded-xl overflow-hidden border border-border">
+                <Image src="/ceramictintmain.webp" alt="Window tinting process" fill className="object-cover" />
+              </div>
+              <div className="relative h-64 sm:h-72 rounded-xl overflow-hidden border border-border">
+                <Image src="/exteriordetailingmain.jpg" alt="Finished vehicle detail" fill className="object-cover" />
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-14">
+            <Link href="/booking" className="btn-primary text-base !py-3.5 !px-8">
+              Get a Free Quote
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* ===== FEATURED WORK / SHOWCASE ===== */}
+      <section className="py-20 sm:py-28 bg-surface border-t border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+              Showcase
+            </span>
+            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase">
+              See the <span className="text-accent">Difference</span>
+            </h2>
+            <p className="mt-4 text-muted max-w-2xl mx-auto">
+              Real results from our studio. Slide through some of our favorite transformations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Engine Bay Before/After */}
+            <div className="bg-surface-light border border-border rounded-xl overflow-hidden p-6">
+              <h3 className="text-xl font-bold text-white uppercase mb-4 flex items-center justify-between">
+                Engine Bay Detail
+                <span className="text-accent text-xs font-bold tracking-widest">SLIDE-BY-SLIDE</span>
+              </h3>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="relative h-48 sm:h-64 rounded-lg overflow-hidden">
+                  <div className="absolute top-2 left-2 z-10 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-wider">Before</div>
+                  <Image src="/engine_before.jpg" alt="Engine bay before" fill className="object-cover" />
+                </div>
+                <div className="relative h-48 sm:h-64 rounded-lg overflow-hidden">
+                  <div className="absolute top-2 left-2 z-10 bg-accent/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-wider">After</div>
+                  <Image src="/engine_after.jpg" alt="Engine bay after" fill className="object-cover" />
+                </div>
+              </div>
+            </div>
+
+            {/* Paint Correction & Ceramic */}
+            <div className="bg-surface-light border border-border rounded-xl overflow-hidden p-6">
+              <h3 className="text-xl font-bold text-white uppercase mb-4 flex items-center justify-between">
+                Mirror Finish Results
+                <span className="text-accent text-xs font-bold tracking-widest">GALLERY</span>
+              </h3>
+              <div className="grid grid-cols-2 gap-2 h-48 sm:h-64">
+                <div className="relative rounded-lg overflow-hidden">
+                  <Image src="/paint_correction_2.jpg" alt="Paint correction detail" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div className="relative rounded-lg overflow-hidden">
+                  <Image src="/ceramic_2.jpg" alt="Ceramic coating gloss" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

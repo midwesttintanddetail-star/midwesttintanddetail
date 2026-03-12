@@ -31,7 +31,7 @@ export default function BookingPage() {
                         <div className="bg-surface-light border border-border rounded-lg p-6 sm:p-8 lg:p-10">
                             <ContactForm
                                 heading="Tell Us About Your Vehicle"
-                                subtext="Our business hours are 9 AM – 5 PM, Monday through Friday. Please be patient with us as we stay very busy — someone will reach out to you shortly to get you scheduled!"
+                                subtext="Our business hours are 9 AM – 5 PM, Monday through Saturday. Please be patient with us as we stay very busy — someone will reach out to you shortly to get you scheduled!"
                                 showVehicle={true}
                                 showDate={true}
                             />
@@ -119,7 +119,7 @@ export default function BookingPage() {
                                 </svg>
                                 <div>
                                     <p className="text-white text-sm font-semibold">Business Hours</p>
-                                    <p className="text-muted text-sm">Mon – Fri: 9 AM – 5 PM</p>
+                                    <p className="text-muted text-sm">Mon – Sat: 9 AM – 5 PM</p>
                                 </div>
                             </div>
                         </div>

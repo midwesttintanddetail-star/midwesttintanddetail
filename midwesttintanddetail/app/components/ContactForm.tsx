@@ -40,46 +40,18 @@ export default function ContactForm({
                 <input type="hidden" name="_template" value="table" />
                 <input type="text" name="_honey" style={{ display: "none" }} />
 
-                {/* Name Row */}
+                {/* Contact Info Row */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label className="block text-xs font-medium text-white/60 uppercase tracking-wider mb-1.5">
-                            First Name *
+                            Name *
                         </label>
                         <input
                             type="text"
-                            name="First Name"
+                            name="Name"
                             required
                             className="form-input"
-                            placeholder="John"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-xs font-medium text-white/60 uppercase tracking-wider mb-1.5">
-                            Last Name *
-                        </label>
-                        <input
-                            type="text"
-                            name="Last Name"
-                            required
-                            className="form-input"
-                            placeholder="Doe"
-                        />
-                    </div>
-                </div>
-
-                {/* Contact Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label className="block text-xs font-medium text-white/60 uppercase tracking-wider mb-1.5">
-                            Email *
-                        </label>
-                        <input
-                            type="email"
-                            name="Email"
-                            required
-                            className="form-input"
-                            placeholder="john@example.com"
+                            placeholder="John Doe"
                         />
                     </div>
                     <div>
@@ -100,7 +72,7 @@ export default function ContactForm({
                 {showVehicle && (
                     <div>
                         <label className="block text-xs font-medium text-white/60 uppercase tracking-wider mb-1.5">
-                            Vehicle (Year, Make, Model)
+                            Vehicle Description
                         </label>
                         <input
                             type="text"
@@ -113,19 +85,36 @@ export default function ContactForm({
 
                 {/* Service Selection */}
                 <div>
-                    <label className="block text-xs font-medium text-white/60 uppercase tracking-wider mb-1.5">
-                        Service Interested In *
+                    <label className="block text-xs font-medium text-white/60 uppercase tracking-wider mb-2.5">
+                        Services Interested In
                     </label>
-                    <select name="Service" required className="form-select">
-                        <option value="">Select a service...</option>
-                        <option value="Window Tinting">Window Tinting</option>
-                        <option value="Ceramic Coating">Ceramic Coating</option>
-                        <option value="Paint Correction">Paint Correction</option>
-                        <option value="Interior Detailing">Interior Detailing</option>
-                        <option value="Exterior Detailing">Exterior Detailing</option>
-                        <option value="Full Detail Package">Full Detail Package</option>
-                        <option value="Other">Other</option>
-                    </select>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-white/80">
+                        {/* Invisible grouped input to ensure formsubmit catches it properly without JS if possible, but checkboxes with same name work too */}
+                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
+                            <input type="checkbox" name="Services" value="Window Tint" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
+                            <span>Window Tint</span>
+                        </label>
+                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
+                            <input type="checkbox" name="Services" value="Ceramic Coating" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
+                            <span>Ceramic Coating</span>
+                        </label>
+                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
+                            <input type="checkbox" name="Services" value="Paint Correction" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
+                            <span>Paint Correction</span>
+                        </label>
+                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
+                            <input type="checkbox" name="Services" value="Full Detail (Interior + Exterior)" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
+                            <span>Full Detail (Interior + Exterior)</span>
+                        </label>
+                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
+                            <input type="checkbox" name="Services" value="Interior Detail Only" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
+                            <span>Interior Detail Only</span>
+                        </label>
+                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
+                            <input type="checkbox" name="Services" value="Exterior Detail Only" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
+                            <span>Exterior Detail Only</span>
+                        </label>
+                    </div>
                 </div>
 
                 {/* Preferred Date */}

@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 export const metadata: Metadata = {
     title: "Contact Us | Midwest Tint & Detail",
     description:
-        "Get in touch with Midwest Tint & Detail in Plymouth, MI. Call (313) 729-0005, email MidwestTintandDetail@gmail.com, or fill out our contact form for a free quote.",
+        "Get in touch with Midwest Tint & Detail in Plymouth, MI. Call (313) 729-0005 or fill out our contact form for a free quote.",
 };
 
 export default function ContactPage() {
@@ -50,20 +50,6 @@ export default function ContactPage() {
                                 <div className="flex items-start gap-4">
                                     <div className="w-10 h-10 bg-accent/10 border border-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
                                         <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="text-white text-sm font-semibold">Email</p>
-                                        <a href="mailto:MidwestTintandDetail@gmail.com" className="text-muted text-sm hover:text-accent transition-colors break-all">
-                                            MidwestTintandDetail@gmail.com
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 bg-accent/10 border border-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
@@ -85,7 +71,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="text-white text-sm font-semibold">Hours</p>
-                                        <p className="text-muted text-sm">Mon – Fri: 9 AM – 5 PM</p>
+                                        <p className="text-muted text-sm">Mon – Sat: 9 AM – 5 PM</p>
                                     </div>
                                 </div>
 
@@ -130,7 +116,7 @@ export default function ContactPage() {
                         <div className="bg-surface-light border border-border rounded-lg p-6 sm:p-8 lg:p-10">
                             <ContactForm
                                 heading="Send Us a Message"
-                                subtext="Fill out the form below and we'll get back to you as soon as possible. Our business hours are 9 AM – 5 PM, Monday through Friday."
+                                subtext="Fill out the form below and we'll get back to you as soon as possible. Our business hours are 9 AM – 5 PM, Monday through Saturday."
                                 showVehicle={true}
                                 showDate={false}
                             />
