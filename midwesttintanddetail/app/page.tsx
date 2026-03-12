@@ -178,7 +178,7 @@ export default function Home() {
           </div>
 
           {/* Secondary services grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Ceramic Coating */}
             <div className="service-card bg-surface-light border border-border rounded-xl overflow-hidden group">
               <div className="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-video lg:aspect-[4/3]">
@@ -225,7 +225,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Full Detailing */}
+            {/* Interior Detailing */}
             <div className="service-card bg-surface-light border border-border rounded-xl overflow-hidden group">
               <div className="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-video lg:aspect-[4/3] bg-black">
                 <video
@@ -238,9 +238,33 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-white uppercase">Full Detailing</h3>
+                <h3 className="text-lg font-bold text-white uppercase">Interior Detailing</h3>
                 <p className="mt-2 text-muted text-sm leading-relaxed">
-                  Complete interior & exterior restoration — from deep cleaning and leather conditioning to a premium exterior wash and sealant.
+                  Deep cleaning and restoration of your vehicle&apos;s interior — leather
+                  conditioning, carpet shampooing, and more.
+                </p>
+                <Link
+                  href="/booking"
+                  className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
+                >
+                  Get a Quote
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Exterior Detailing */}
+            <div className="service-card bg-surface-light border border-border rounded-xl overflow-hidden group">
+              <div className="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-video lg:aspect-[4/3] bg-black">
+                <Image src="/exterior_cadillac.jpg" alt="Exterior Detailing" fill className="object-contain sm:object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-white uppercase">Exterior Detailing</h3>
+                <p className="mt-2 text-muted text-sm leading-relaxed">
+                  Premium exterior wash, clay bar treatment, polish, and sealant for a
+                  stunning showroom finish.
                 </p>
                 <Link
                   href="/booking"

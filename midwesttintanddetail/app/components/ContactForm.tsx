@@ -103,16 +103,8 @@ export default function ContactForm({
                             <span>Paint Correction</span>
                         </label>
                         <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
-                            <input type="checkbox" name="Services" value="Full Detail (Interior + Exterior)" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
-                            <span>Full Detail (Interior + Exterior)</span>
-                        </label>
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
-                            <input type="checkbox" name="Services" value="Interior Detail Only" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
-                            <span>Interior Detail Only</span>
-                        </label>
-                        <label className="flex items-center gap-3 cursor-pointer p-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
-                            <input type="checkbox" name="Services" value="Exterior Detail Only" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
-                            <span>Exterior Detail Only</span>
+                            <input type="checkbox" name="Services" value="Full Detailing" className="w-4 h-4 rounded border-white/20 bg-transparent text-accent focus:ring-accent/50 focus:ring-offset-0" />
+                            <span>Full Detailing</span>
                         </label>
                     </div>
                 </div>
