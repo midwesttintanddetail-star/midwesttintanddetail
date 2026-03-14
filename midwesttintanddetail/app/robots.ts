@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://midwesttintanddetail.com/sitemap.xml',
+    sitemap: 'https://midwesttintdetail.com/sitemap.xml',
   }
 }

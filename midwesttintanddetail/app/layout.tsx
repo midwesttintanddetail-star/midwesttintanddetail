@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Plymouth's #1 trusted tint and detail shop. We specialize in ceramic window tinting with a lifetime warranty, ceramic coating, paint correction, and interior & exterior detailing. Located at 524 Farmer St, Plymouth MI 48170.",
   keywords:
     "window tinting, ceramic tint, car detailing, paint correction, ceramic coating, Plymouth MI, auto detailing, window film, lifetime warranty tint",
-  metadataBase: new URL('https://midwesttintanddetail.com'),
+  metadataBase: new URL('https://midwesttintdetail.com'),
   alternates: {
     canonical: '/',
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Midwest Tint & Detail | Plymouth's #1 Trusted Tint & Detail Shop",
     description:
       "Premium ceramic window tinting with lifetime warranty. Ceramic coating, paint correction, and full interior & exterior detailing in Plymouth, MI.",
-    url: 'https://midwesttintanddetail.com',
+    url: 'https://midwesttintdetail.com',
     siteName: 'Midwest Tint & Detail',
     images: [
       {
@@ -72,9 +72,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AutoBodyShop",
               "name": "Midwest Tint & Detail",
-              "image": "https://midwesttintanddetail.com/logo.png",
+              "image": "https://midwesttintdetail.com/logonc.png",
               "@id": "",
-              "url": "https://midwesttintanddetail.com",
+              "url": "https://midwesttintdetail.com",
               "telephone": "+13137290005",
               "address": {
                 "@type": "PostalAddress",

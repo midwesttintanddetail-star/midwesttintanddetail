@@ -35,7 +35,7 @@ export default function ContactForm({
                 <input
                     type="hidden"
                     name="_next"
-                    value="http://localhost:3000/contact?submitted=true"
+                    value="https://midwesttintdetail.com/contact?submitted=true"
                 />
                 <input type="hidden" name="_template" value="table" />
                 <input type="text" name="_honey" style={{ display: "none" }} />
