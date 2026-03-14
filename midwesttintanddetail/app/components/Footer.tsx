@@ -74,7 +74,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/booking" className="text-sm text-muted hover:text-accent transition-colors">
+                                <Link href="/contact" className="text-sm text-muted hover:text-accent transition-colors">
                                     Get a Quote
                                 </Link>
                             </li>

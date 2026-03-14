@@ -71,7 +71,7 @@ export default function Home() {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-            <Link href="/booking" className="btn-primary text-base !py-3.5 !px-8">
+            <Link href="/contact" className="btn-primary text-base !py-3.5 !px-8">
               Get a Free Quote
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -200,7 +200,7 @@ export default function Home() {
                   that keeps your vehicle looking showroom-fresh.
                 </p>
                 <Link
-                  href="/booking"
+                  href="/contact"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
                   Get a Quote
@@ -223,7 +223,7 @@ export default function Home() {
                   flawless, mirror-like finish.
                 </p>
                 <Link
-                  href="/booking"
+                  href="/contact"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
                   Get a Quote
@@ -253,7 +253,7 @@ export default function Home() {
                   conditioning, carpet shampooing, and more.
                 </p>
                 <Link
-                  href="/booking"
+                  href="/contact"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
                   Get a Quote
@@ -276,7 +276,7 @@ export default function Home() {
                   stunning showroom finish.
                 </p>
                 <Link
-                  href="/booking"
+                  href="/contact"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
                   Get a Quote
@@ -675,7 +675,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-14">
-            <Link href="/booking" className="btn-primary text-base !py-3.5 !px-8">
+            <Link href="/contact" className="btn-primary text-base !py-3.5 !px-8">
               Get a Free Quote
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -751,7 +751,7 @@ export default function Home() {
             reach out and we&apos;ll take care of the rest.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-            <Link href="/booking" className="btn-primary text-base !py-3.5 !px-8">
+            <Link href="/contact" className="btn-primary text-base !py-3.5 !px-8">
               Get a Free Quote
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />

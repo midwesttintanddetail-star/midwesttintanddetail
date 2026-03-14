@@ -84,7 +84,7 @@ export default function Navbar() {
                         >
                             Contact
                         </Link>
-                        <Link href="/booking" className="btn-primary text-sm !py-2.5 !px-5">
+                        <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
                             Get a Free Quote
                         </Link>
                     </div>
@@ -136,7 +136,7 @@ export default function Navbar() {
                         Contact
                     </Link>
                     <Link
-                        href="/booking"
+                        href="/contact"
                         className="btn-primary text-sm w-full justify-center"
                         onClick={() => setIsMobileOpen(false)}
                     >
