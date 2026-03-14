@@ -6,15 +6,24 @@ export default function Home() {
     <>
       {/* ===== HERO ===== */}
       <section className="relative min-h-[90vh] flex items-center justify-center hero-overlay">
-        {/* Background Video */}
-        <video
-          src="/hero_video.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
+        {/* Background Media */}
+        <div className="absolute inset-0 z-0">
+          <video
+            src="/hero_video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover sm:hidden"
+          />
+          <Image
+            src="/hero-desktop.png"
+            alt="Midwest Tint & Detail Hero"
+            fill
+            className="object-cover hidden sm:block"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-background z-[1]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
