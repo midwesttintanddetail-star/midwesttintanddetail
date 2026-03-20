@@ -17,7 +17,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover sm:hidden"
           />
           <Image
-            src="/store_front.jpg"
+            src="/store_front.png"
             alt="Midwest Tint & Detail Hero"
             fill
             className="object-cover hidden sm:block"
@@ -356,7 +356,7 @@ export default function Home() {
             </div>
 
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10">
-              <Image src="/store_front.jpg" alt="Midwest Tint & Detail Shop" fill className="object-cover" />
+              <Image src="/store_front1.jpg" alt="Midwest Tint & Detail Shop" fill className="object-cover" />
             </div>
           </div>
         </div>
