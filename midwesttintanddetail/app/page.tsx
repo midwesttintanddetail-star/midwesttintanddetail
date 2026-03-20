@@ -17,7 +17,7 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover sm:hidden"
           />
           <Image
-            src="/hero-desktop.png"
+            src="/store_front.jpg"
             alt="Midwest Tint & Detail Hero"
             fill
             className="object-cover hidden sm:block"

@@ -27,7 +27,7 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
                     {/* Contact Info Sidebar */}
-                    <div className="lg:col-span-2 space-y-6">
+                    <div className="order-2 lg:order-1 lg:col-span-2 space-y-6">
                         {/* Info Cards */}
                         <div className="bg-surface-light border border-border rounded-lg p-6">
                             <h3 className="text-lg font-bold text-white mb-5">Contact Information</h3>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="lg:col-span-3">
+                    <div className="order-1 lg:order-2 lg:col-span-3">
                         <div className="bg-surface-light border border-border rounded-lg p-6 sm:p-8 lg:p-10">
                             <ContactForm
                                 heading="Send Us a Message"
