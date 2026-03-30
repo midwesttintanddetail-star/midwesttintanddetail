@@ -84,9 +84,22 @@ export default function Navbar() {
                         >
                             Contact
                         </Link>
-                        <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
-                            Get a Free Quote
-                        </Link>
+                        <a
+                            href="https://midwesttintdetail.setmore.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-medium text-white/80 hover:text-accent transition-colors uppercase tracking-wider"
+                        >
+                            Booking
+                        </a>
+                        <a 
+                            href="https://midwesttintdetail.setmore.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="btn-primary text-sm !py-2.5 !px-5"
+                        >
+                            Book Now
+                        </a>
                     </div>
 
                     {/* Mobile Burger */}
@@ -135,13 +148,24 @@ export default function Navbar() {
                     >
                         Contact
                     </Link>
-                    <Link
-                        href="/contact"
+                    <a
+                        href="https://midwesttintdetail.setmore.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-sm font-medium text-white/80 hover:text-accent transition-colors uppercase tracking-wider"
+                        onClick={() => setIsMobileOpen(false)}
+                    >
+                        Booking
+                    </a>
+                    <a
+                        href="https://midwesttintdetail.setmore.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="btn-primary text-sm w-full justify-center"
                         onClick={() => setIsMobileOpen(false)}
                     >
-                        Get a Free Quote
-                    </Link>
+                        Book Now
+                    </a>
                 </div>
             </div>
         </nav>

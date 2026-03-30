@@ -71,14 +71,14 @@ export default function Home() {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-            <Link href="/contact" className="btn-primary text-base !py-3.5 !px-8">
-              Get a Free Quote
+            <a href="https://midwesttintdetail.setmore.com" target="_blank" rel="noopener noreferrer" className="btn-primary text-base !py-3.5 !px-8">
+              Book Now
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
-            <Link href="/services" className="btn-outline text-base !py-3.5 !px-8">
-              View Services
+            </a>
+            <Link href="/contact" className="btn-outline text-base !py-3.5 !px-8">
+              Contact Us
             </Link>
           </div>
         </div>
@@ -199,15 +199,17 @@ export default function Home() {
                   Long-lasting protection for your paint with a hydrophobic ceramic coating
                   that keeps your vehicle looking showroom-fresh.
                 </p>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://midwesttintdetail.setmore.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
-                  Get a Quote
+                  Book Now
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -222,15 +224,17 @@ export default function Home() {
                   Remove swirl marks, scratches, and oxidation to restore your paint to a
                   flawless, mirror-like finish.
                 </p>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://midwesttintdetail.setmore.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
-                  Get a Quote
+                  Book Now
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -252,15 +256,17 @@ export default function Home() {
                   Deep cleaning and restoration of your vehicle&apos;s interior — leather
                   conditioning, carpet shampooing, and more.
                 </p>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://midwesttintdetail.setmore.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
-                  Get a Quote
+                  Book Now
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -275,15 +281,17 @@ export default function Home() {
                   Premium exterior wash, clay bar treatment, polish, and sealant for a
                   stunning showroom finish.
                 </p>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://midwesttintdetail.setmore.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold group-hover:gap-3 transition-all"
                 >
-                  Get a Quote
+                  Book Now
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -675,12 +683,12 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-14">
-            <Link href="/contact" className="btn-primary text-base !py-3.5 !px-8">
-              Get a Free Quote
+            <a href="https://midwesttintdetail.setmore.com" target="_blank" rel="noopener noreferrer" className="btn-primary text-base !py-3.5 !px-8">
+              Book Now
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -74,9 +74,9 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className="text-sm text-muted hover:text-accent transition-colors">
-                                    Get a Quote
-                                </Link>
+                                <a href="https://midwesttintdetail.setmore.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted hover:text-accent transition-colors">
+                                    Book Now
+                                </a>
                             </li>
                         </ul>
                     </div>
