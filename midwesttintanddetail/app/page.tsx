@@ -174,12 +174,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-8">
-                    <Link href="/services" className="btn-primary">
-                      Get a Quote
+                    <a href="https://midwesttintdetail.setmore.com" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                      Book Now
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
