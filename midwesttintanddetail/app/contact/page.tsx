@@ -71,7 +71,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="text-white text-sm font-semibold">Hours</p>
-                                        <p className="text-muted text-sm">Mon – Sat: 9 AM – 5 PM</p>
+                                        <p className="text-muted text-sm">Mon – Sun: 9 AM – 5 PM</p>
                                     </div>
                                 </div>
 
@@ -116,7 +116,7 @@ export default function ContactPage() {
                         <div className="bg-surface-light border border-border rounded-lg p-6 sm:p-8 lg:p-10">
                             <ContactForm
                                 heading="Send Us a Message"
-                                subtext="Fill out the form below and we'll get back to you as soon as possible. Our business hours are 9 AM – 5 PM, Monday through Saturday."
+                                subtext="Fill out the form below and we'll get back to you as soon as possible. Our business hours are 9 AM – 5 PM, Monday through Sunday."
                                 showVehicle={true}
                                 showDate={false}
                             />
